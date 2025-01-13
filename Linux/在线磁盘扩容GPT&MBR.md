@@ -88,3 +88,9 @@ Ignore/Cancel? Cancel
 ```
 Warning: Not all of the space available to /dev/vdc appears to be used, you can fix the GPT to use all of the space (an extra 41943040 blocks) or continue with the current setting?
 ```
+
+### MBR转GPT
+安装命令工具依赖  
+`type sgdisk || sudo yum install -y gdisk`  
+-g 代表conver mbr to gpt   
+`sgdisk -g /dev/vdb`  
